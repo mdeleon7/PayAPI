@@ -14,7 +14,7 @@ interface UpdateNameComponentProps {
 };
 
 const NameComponent = createContext<NameComponentProps>({ name: null});
-const UpdateNameContext = createContext<UpdateNameComponentProps>({ setName: (name: string) => {}});
+const UpdateNameContext = createContext<UpdateNameComponentProps>({ setName: () => {}});
 
 export const UseName = () => {
   return useContext(NameComponent);
